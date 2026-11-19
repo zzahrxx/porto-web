@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio | Nama Lengkap Kamu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="brand">NamaKamu<span>.</span></a>
+      <nav class="nav-links">
+        <a href="#beranda">Beranda</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#proyek">Proyek</a>
+        <a href="#pengalaman">Pengalaman</a>
+        <a href="#keahlian">Keahlian</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="beranda" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="greeting">Hai, saya</p>
+        <h1>Nama Lengkap Kamu</h1>
+        <p class="role">D4 Teknik Telekomunikasi &bull; Embedded Systems &amp; Networking</p>
+        <p class="summary">
+          Mahasiswa Teknik Telekomunikasi dengan pengalaman merancang sistem berbasis mikrokontroler (Arduino/ESP32), simulasi rangkaian, serta analisis jaringan komputer.
+        </p>
+        <div class="hero-buttons">
+          <a href="#kontak" class="btn btn-white">Hubungi Saya</a>
+          <a href="#proyek" class="btn btn-outline">Lihat Proyek</a>
+          <a href="assets/CV-Kamu.pdf" download class="btn btn-outline">Unduh CV</a>
+        </div>
+      </div>
+
+      <!-- Kartu Profil Kanan -->
+      <div class="id-card">
+        <div class="id-photo">
+          <img src="assets/foto-profil.jpg" alt="Foto Profil" />
+        </div>
+        <div class="id-info">
+          <h3>Nama Panggilan</h3>
+          <p class="id-major">TEKNIK TELEKOMUNIKASI</p>
+          <p class="id-campus">Politeknik Negeri Semarang</p>
+          <div class="id-meta">
+            <span>Semester 5</span>
+            <span>2024 – Sekarang</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Proyek / Pengalaman Magang (Layout Kartu Foto) -->
+  <section id="proyek" class="section">
+    <div class="container">
+      <h2 class="section-title">Proyek &amp; Praktikum Pilihan</h2>
+      
+      <div class="card-grid">
+        <!-- Kartu 1 -->
+        <article class="doc-card">
+          <div class="doc-img">
+            <img src="assets/proyek-radar.jpg" alt="Sistem Radar Ultrasonik" />
+          </div>
+          <div class="doc-body">
+            <span class="date-tag">SEPTEMBER 2026</span>
+            <h3>Sistem Radar Deteksi Jarak Ultrasonik</h3>
+            <p class="org">Arduino Uno &bull; Sensor HC-SR04 &bull; Servo &bull; Processing</p>
+            <p class="desc">
+              Merancang perangkat pemindai objek jarak dekat hingga 20 cm dengan indikator buzzer dan antarmuka visualisasi radar real-time di PC.
+            </p>
+            <button class="detail-btn" onclick="bukaModal('radar')">Lihat detail &rarr;</button>
+          </div>
+        </article>
+
+        <!-- Kartu 2 -->
+        <article class="doc-card">
+          <div class="doc-img">
+            <img src="assets/proyek-esp32.jpg" alt="Konfigurasi ESP32" />
+          </div>
+          <div class="doc-body">
+            <span class="date-tag">OKTOBER 2026</span>
+            <h3>Pengujian Konektivitas &amp; Simulasi ESP32</h3>
+            <p class="org">ESP32 &bull; Arduino IDE &bull; Tinkered.ai</p>
+            <p class="desc">
+              Melakukan simulasi rangkaian mikrokontroler ESP32, pembacaan alamat MAC perangkat, serta troubleshooting komunikasi serial dan memori flash.
+            </p>
+            <button class="detail-btn" onclick="bukaModal('esp32')">Lihat detail &rarr;</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Timeline (Seperti Bagian Pengalaman Organisasi) -->
+  <section id="pengalaman" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Proyek Akademik &amp; Kajian Teknis</h2>
+
+      <div class="timeline-list">
+        <!-- Item Timeline 1 -->
+        <div class="timeline-item">
+          <div class="timeline-date">September 2026</div>
+          <div class="timeline-content">
+            <h3>Analisis Path Profile &amp; Kontur Antena</h3>
+            <p class="org">Mata Kuliah Sistem Komunikasi Radio / Antena</p>
+            <ul>
+              <li>Menghitung jarak lintasan dan profil elevasi permukaan bumi antar titik pemancar dan penerima.</li>
+              <li>Mengevaluasi potensi hambatan gelombang radio berdasarkan data kontur peta.</li>
+            </ul>
+            <!-- Galeri Mini Hasil Kerja -->
+            <div class="mini-gallery">
+              <img src="assets/kontur-1.jpg" alt="Grafik Elevasi" />
+              <img src="assets/kontur-2.jpg" alt="Peta Lintasan" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Item Timeline 2 -->
+        <div class="timeline-item">
+          <div class="timeline-date">September 2026</div>
+          <div class="timeline-content">
+            <h3>Kajian Keamanan Jaringan Komputer</h3>
+            <p class="org">Mata Kuliah Jaringan Komputer Lanjut</p>
+            <ul>
+              <li>Menyusun analisis kerentanan jaringan, mekanisme enkripsi, dan mitigasi serangan siber pada infrastruktur jaringan.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <footer id="kontak" class="footer">
+    <div class="container">
+      <h2>Mari Terhubung</h2>
+      <p>Silakan hubungi saya untuk diskusi proyek atau peluang magang.</p>
+      <div class="contact-links">
+        <a href="mailto:emailkamu@example.com">Email</a>
+        <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
+        <a href="https://github.com/username" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Popup untuk Tombol "Lihat detail" -->
+  <div id="detailModal" class="modal" onclick="tutupModal(event)">
+    <div class="modal-box">
+      <span class="close-btn" onclick="document.getElementById('detailModal').style.display='none'">&times;</span>
+      <h3 id="modalTitle">Judul Proyek</h3>
+      <p id="modalDesc">Deskripsi lengkap proyek akan tampil di sini.</p>
+    </div>
+  </div>
+
+  <script>
+    const dataProyek = {
+      radar: {
+        title: "Sistem Radar Deteksi Jarak Ultrasonik",
+        desc: "Menggunakan sensor ultrasonik HC-SR04 yang dipasang di atas motor servo untuk memindai sudut 0–180 derajat. Data jarak dikirim melalui komunikasi serial ke aplikasi Processing untuk menampilkan garis pemindaian radar dan menyalakan buzzer ketika objek terdeteksi dalam radius 20 cm."
+      },
+      esp32: {
+        title: "Pengujian Konektivitas & Simulasi ESP32",
+        desc: "Merancang rangkaian virtual pada simulator, memprogram pembacaan MAC Address unik papan ESP32 melalui Arduino IDE, serta melakukan debugging pada proses flashing firmware."
+      }
+    };
+
+    function bukaModal(id) {
+      document.getElementById("modalTitle").innerText = dataProyek[id].title;
+      document.getElementById("modalDesc").innerText = dataProyek[id].desc;
+      document.getElementById("detailModal").style.display = "flex";
+    }
+
+    function tutupModal(e) {
+      if (e.target.id === "detailModal") {
+        document.getElementById("detailModal").style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
